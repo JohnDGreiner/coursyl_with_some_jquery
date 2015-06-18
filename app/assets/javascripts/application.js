@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require datetimepicker
 //= require jquery_ujs
 //= require d3
 //= require_tree .
@@ -28,13 +29,18 @@ function hideDeletedElement() {
 }
 
 function hideAddElement() {
-  var container = $(".association.container")
+  var container = $(".association.container");
   container.last().hide();
 }
 
 function showAddElement() {
-  var container = $(".association.container")
+  var container = $(".association.container");
   container.last().show();
+}
+
+function modalDateTimePicker() {
+  var modalDate = $(".modal-date");
+  modalDate.datetimepicker();
 }
 
 function smoothScroll() {
@@ -45,5 +51,6 @@ function smoothScroll() {
   });
 }
 
+$(modalDateTimePicker);
 $(smoothScroll);
 $(hideAddElement);

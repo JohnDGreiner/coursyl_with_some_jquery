@@ -29,6 +29,10 @@ gem 'd3-rails'
 gem 'rails-reveal-js'
 gem 'font-awesome-rails'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-datetimepicker'
+end
+
 gem 'devise'
 
 group :doc do
